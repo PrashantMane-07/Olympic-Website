@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color:#ffffff;
+    --secondary-text-color:#000000;
+    --sub-text-color:#484848;
+    --section-front-title:#4870FF;
+    --section-BG-title:#ffb70092;
+    --button-color:#FFB800;
+    --padding-inline-section:20px
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color:var(--secondary-text-color);
+}
+
+h1{
+    font-size: 6rem;
+    color: #ffffff;
+    text-shadow: 5px 5px #b5b5b528;
+}
+
+h2{
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 3.9rem;
+    color: var(--section-front-title);
+    font-weight: 700;
+}
+h4{
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+h5{
+    font-size: 3rem;
+    color: #000000df;
+    font-weight: 700;
+    line-height: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight:700;
+}
+
+p{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.35rem;
+    color:#ffffff;
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+    font-size: 1.2rem;
+   
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin-inline: auto;
+    overflow: hidden;
+    /* background-color: #180707c2; */
+    padding-inline:var(--padding-inline-section) ;
+} 
+
+.hover-menu{
+  
+    color: var(--primary-text-color);
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+
+.hover-menu:hover{
+    color: #f5f900;
+    border-bottom:3px solid #f5f900;
+   
+}
+
+.nav-toggle{
+    display: none;
+}
+.hero{
+    background-image: url(images/imgmain.png);
+    /* background-color: #4870FF; */
+    background-size: 100%;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+.nav-section{
+    justify-content: space-between;
+    top: 30px;
+    position: relative;
+    background-color: #0000002f;
+    border-radius: 10px;
+}
+
+.website-logo{
+    width: 50px;
+}
+
+.menus{
+    flex-basis:730px ;
+}
+.menus ul{
+    margin-left: 180px;
+    justify-content: end;
+    gap: 70px;
+}
+
+header{
+    margin-top: 160px;
+}
+
+.header-section{
+    gap: 45px;
+    justify-content: center;
+}
+
+.horizontal-line img{
+    width: 10px;
+}
+
+.header-text{
+    flex-direction: column;
+  
+}
+
+
+.search-section{
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.search-input input {
+    width: 842px;
+    height: 44px;
+    border: none;
+    padding-left: 30px;
+    font-size: 21px;
+    font-family:'Times New Roman', Times, serif;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.251);
+    border-radius: 5px;
+    backdrop-filter: blur(2px)
+}
+
+.search-btn{
+    width: 143.7px;
+    height: 45px;
+    background: #f5f9009a;
+    color: rgb(61, 61, 61);
+    font-size: 19px;
+    border: none;
+    font-weight: 500;
+    border-radius: 5px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+.search-btn:hover{
+    color: rgb(22, 22, 22);
+    background-color:#f5f900;
+    /* border: 1px solid #ffffff; */
+}
+
+/* Section 2 */
+.game-section{
+    margin-top: 40px;
+}
+.section-two{
+    flex-direction: column;
+    row-gap: 30px;
+    height: 480px;
+    /* background-color: #000000; */
+    justify-content: center;
+    background-image: url(images/WtchURfavBox1.png);
+}
+
+.sec-two-heading{
+    word-spacing: 12px;
+}    
+/* 
+.WYFimg:nth-child(1) {
+    background-image: url(images/GettyImages.png);
+  }
+
+  .WYFimg:nth-child(2) {
+    background-image: url(images/wrestling.png);
+  }
+  .WYFimg:nth-child(3) {
+    background-image: url(images/pvsindhu.png);
+  }
+  .WYFimg:nth-child(4) {
+    background-image: url(images/jymnastic.jpg);
+  }
+  .WYFimg:nth-child(5) {
+    background-image: url(images/indiamixedrelayteam.png);
+  } */
+    .pic-ctn {
+        width: 100vw;
+        height: 200px;
+      }
+      .Bsize{
+        font-size: 1.8rem;
+
+      }
+    
+      .aTag{
+        justify-content: end;
+        color: #000000;
+      }
+      
+      @keyframes display {
+        0% {
+          transform: translateX(200px);
+          opacity: 0;
+        }
+        1% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        20% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        21% {
+          transform: translateX(-200px);
+          opacity: 0;
+        }
+    
+        25% {
+          transform: translateX(-200px);
+          opacity: 0;
+        }
+        30% {
+          transform: translateX(-200px);
+          opacity: 0;
+        }
+        60% {
+          transform: translateX(-300px);
+          opacity: 0;
+        }
+      }
+    
+      .corosal{
+        height: 300px;
+        justify-content:space-evenly;
+      }
+       
+      .pic-ctn {
+        position: relative;
+        width: 100vw;
+        height: 300px;
+        margin-right: 20px;
+        margin-top: 0vh;
+      }
+      
+      
+      .pic-ctn >.WYFimg {
+        position: absolute;
+        top: 0;
+        left: calc(20% - 100px);
+        opacity: 0;
+        animation: display 170s infinite;
+      }
+      
+      .WYFimg .WYF{
+        width: 530px;
+        height: 290px;
+      }
+
+      .WYFimg:nth-child(1) {
+        animation-delay: 1s;
+      }
+      .WYFimg:nth-child(2) {
+        animation-delay: 34s;
+      }
+      .WYFimg:nth-child(3) {
+        animation-delay: 68s;
+      }
+      .WYFimg:nth-child(4) {
+        animation-delay: 102s;
+      }
+      .WYFimg:nth-child(5) {
+        animation-delay: 136s;
+      }
+       /*
+     .WYFimg:nth-child(6) {
+        animation-delay: 170s;
+      }
+       
+      .WYFimg:nth-child(7) {
+        animation-delay: 204s;
+      }
+     */
+      .DescriptionPara{
+        width: 500px;
+        align-items: center;
+        height: 290px;
+        margin-right: 60px;
+        margin-top: -10px;
+        background-color: rgba(149, 148, 148, 0.788);
+      }
+    
+      .animatedPara{
+        position: relative;
+        width: 455px;
+        height: 270px;
+        margin: 10px;
+        background-color: rgb(255, 255, 255);
+    
+      }
+      .para{
+        font-size: 1.28rem;
+        padding: 25px 20px;
+
+        text-align: justify;
+        width: 460px;
+        color: #000000;
+      }
+    
+      
+      .animatedPara > .para {
+        position: absolute;
+        top: -20px;
+        left: calc(30% - 135px);
+        opacity: 0;
+        animation: display 170s infinite;
+      }
+    
+    
+      .para:nth-child(1) {
+        animation-delay: 1s;
+      }
+      .para:nth-child(2) {
+        animation-delay: 34s;
+      }
+      .para:nth-child(3) {
+        animation-delay: 68s;
+      }
+      .para:nth-child(4) {
+        animation-delay: 102s;
+      }
+      .para:nth-child(5) {
+        animation-delay: 136s;
+      }
+      .para:nth-child(6) {
+        animation-delay: 170s;
+      }
+      /* 
+      .para:nth-child(7) {
+        animation-delay: 204s;
+      } */
+
+    /* Section 3 */
+    .olympic-location-intro{
+        margin-top: 75px;
+    }
+
+    .sec-three{
+        background-color:#4870FF;
+        border-radius: 10px;
+    }
+
+    .left-div img{
+        width:500px;
+        margin: 30px;
+        border:10px solid #ffffff;
+        border-radius: 20px;
+    }
+
+    .right-div{
+        padding: 10px;
+    }
+
+    /* Sec 4 */
+
+    .winner-player-section{
+        margin-top: 55px;
+    }
+
+    .sec-four {
+
+        /* background-color: #0000002f; */
+        justify-content: space-between;
+        
+        
+    }
+
+    .winner-cards{
+
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+    .example-card{
+        width:350px;
+        position: relative;
+        min-height: 250px;
+        transition: 0.2s ease-out;
+        margin: 20px;
+        background-color:#000000;
+        background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(images/R1C1.png);
+        background-size: cover;
+
+    }
+
+    .example-card:nth-child(2) {
+        background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(images/R1C2.png);
+        background-size: cover;
+    }
+
+    .example-card:nth-child(3) {
+        background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(images/R2C1.png);
+        background-size: cover;
+    }
+
+    .example-card:nth-child(4) {
+        background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(images/R2C2.png);
+        background-size: cover;
+    }
+
+    .example-card:nth-child(5) {
+        background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(images/R3C1.png);
+        background-size: cover;
+    }
+
+    .example-card:nth-child(6) {
+        background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(images/R3C2.png);
+        background-size: cover;
+    }
+
+    .card-text{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        color: #ffffff;
+    }
+
+    .women-div img{
+        width: 380px;
+        height: 650px;
+        justify-content: left;
+    }
+
+    .example-card:hover{
+        box-shadow: 0 0 40px #888888;
+    }
+
+    /* Section 5 */
+    .big-news-section{
+
+        margin-top: 60px;
+    }
+
+    .sec-five{
+        gap: 30px;
+        /* background-color: #4870FF; */
+    }
+
+    .left-part {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .left-part p{
+       text-align: justify;
+       color: #000000 !important;
+    }
+/* 
+    .left-part new-p{
+        line-height:65px;
+        color: #000000 !important;
+     } */
+
+    .right-part img{
+        width: 660px;
+        height: 380px;
+        align-items: end;
+      
+    }
+
+
+    .Play-btn{
+        width: 143.7px;
+        height: 45px;
+        background:#343434;
+        color: rgb(255, 255, 255);
+        font-size: 19px;
+        border: none;
+        margin-top: 13px;
+        font-weight: 500;
+        border-radius: 5px;
+        word-wrap: break-word;
+        cursor: pointer;
+        /* transition: 0.1s ease-in; */
+    
+    }
+    .Play-btn:hover{
+       
+        background:#073dff;
+        background-image: url(images/Sec4BG.png);
+        color:#b4b4b4;
+        box-shadow: 0 0 10px #020202;
+    }
+
+    /* Section six */
+
+    .blogs-section{
+        margin-top: 50px;
+
+    }
+
+    .sec-six{
+        /* background-color: #000000; */
+        flex-direction: column;
+        row-gap: 15px;
+        background-image: url(images/Global_Map.png);
+        background-size: cover;
+        background-repeat:no-repeat;
+       
+
+    }
+    .first-part h3{
+        color:#073dff; 
+        text-shadow: 0 0 10px #ffffff;
+     
+    }
+
+    .msg-box{
+        background-color: #4870ff46;;
+        border-radius: 15px;
+        backdrop-filter: blur(3px);
+        position: relative;
+        width: 100%;
+        min-height: 30%;
+        padding: 25px;
+    }
+
+    .second-part h2{
+        font-size: 1.4rem;
+        color: #000000;
+        font-weight: 600;
+    }
+
+    .second-part p{
+       color:#000000 ;
+       
+    }
+
+    /* Section 7 */
+
+    .online-booking{
+        margin-top: 50px;
+    }
+
+    .sec-seven{
+        flex-direction: column;
+        /* background-color: #000000; */
+    }
+
+    .upper-div h3{
+        color: #00000096;
+       justify-content: center;
+       flex-direction: row;
+    }
+
+    .lower-div{
+        /* margin-top: 10px; */
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+      
+        
+    } 
+
+    .Ticketing{
+        background-image: url(images/Ticketing-box.png);
+        position: relative;
+       width: 600px;
+       flex-direction: column;
+       align-items: start;
+       padding-top: 15px;
+       padding-left: 25px;
+       background-size: cover;
+       padding-right: 25px;
+       height: 350px;
+    
+    }
+
+    .Ticketing h5{
+        color: #ffffffdd;
+       
+    }
+
+    .Ticketing p{
+        color: #0c0c0c;
+        font-family: poppins, sans-serif;
+       font-weight: 400;
+       font-size: 1.22rem;
+    }
+
+    .Ticketing h2{
+        font-size: 1.4rem;
+        color: #000000;
+        font-weight: 600;
+    }
+    
+    .Ticketing input{
+        margin-left: 390px;
+        margin-top: 15px;
+    }
+
+    .Hospitality{
+        background-image: url(images/Hospitality-box.png);
+        position: relative;
+        background-size: cover;
+        width: 600px;
+        flex-direction: column;
+        align-items: start;
+        padding-top: 15px;
+        padding-left: 25px;
+        height: 350px; 
+
+    }
+
+    .Hospitality input{
+        margin-left: 390px;
+        margin-top: 73px;
+    }
+
+    footer{
+        height: 100px;
+        margin-top: 60px;
+        
+        background-color: #000d3b;
+    }
+
+    .foot{
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    .foot p{
+        margin-top: 35px;
+    }
